@@ -1,0 +1,261 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A8F2478-B3E6-47A0-9FBD-EA786785B700}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>zainab_portfolio</RootNamespace>
+    <AssemblyName>zainab_portfolio</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44337</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\project01_slide01.jpg" />
+    <Content Include="content\project01_slide02.jpg" />
+    <Content Include="content\project01_thumb.jpg" />
+    <Content Include="content\project_placeholder_slide.jpg" />
+    <Content Include="content\project_placeholder_thumb.jpg" />
+    <Content Include="Portfolio.html" />
+    <Content Include="style\css\global.css" />
+    <Content Include="style\favicon\apple-touch-icon-114x114.png" />
+    <Content Include="style\favicon\apple-touch-icon-120x120.png" />
+    <Content Include="style\favicon\apple-touch-icon-144x144.png" />
+    <Content Include="style\favicon\apple-touch-icon-152x152.png" />
+    <Content Include="style\favicon\apple-touch-icon-180x180.png" />
+    <Content Include="style\favicon\apple-touch-icon-57x57.png" />
+    <Content Include="style\favicon\apple-touch-icon-60x60.png" />
+    <Content Include="style\favicon\apple-touch-icon-72x72.png" />
+    <Content Include="style\favicon\apple-touch-icon-76x76.png" />
+    <Content Include="style\favicon\apple-touch-icon-precomposed.png" />
+    <Content Include="style\favicon\apple-touch-icon.png" />
+    <Content Include="style\favicon\browserconfig.xml" />
+    <Content Include="style\favicon\favicon-160x160.png" />
+    <Content Include="style\favicon\favicon-16x16.png" />
+    <Content Include="style\favicon\favicon-192x192.png" />
+    <Content Include="style\favicon\favicon-32x32.png" />
+    <Content Include="style\favicon\favicon-96x96.png" />
+    <Content Include="style\favicon\mstile-144x144.png" />
+    <Content Include="style\favicon\mstile-150x150.png" />
+    <Content Include="style\favicon\mstile-310x150.png" />
+    <Content Include="style\favicon\mstile-310x310.png" />
+    <Content Include="style\favicon\mstile-70x70.png" />
+    <Content Include="style\fonts\webfont-font-awesome\css\font-awesome.css" />
+    <Content Include="style\fonts\webfont-font-awesome\css\font-awesome.min.css" />
+    <Content Include="style\fonts\webfont-font-awesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Bold.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraBold.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraLight.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Heavy.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Light.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Medium.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Regular.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-SemiBold.svg" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Thin.svg" />
+    <Content Include="style\fonts\webfont-raleway\webfont-raleway.css" />
+    <Content Include="style\img\content_hollow-arrow.png" />
+    <Content Include="style\img\exp\exp_bootstrap.svg" />
+    <Content Include="style\img\exp\exp_css3.svg" />
+    <Content Include="style\img\exp\exp_fireworks.svg" />
+    <Content Include="style\img\exp\exp_foundation-glasses.svg" />
+    <Content Include="style\img\exp\exp_git.svg" />
+    <Content Include="style\img\exp\exp_html5.svg" />
+    <Content Include="style\img\exp\exp_illustrator.svg" />
+    <Content Include="style\img\exp\exp_javascript.svg" />
+    <Content Include="style\img\exp\exp_jquery.svg" />
+    <Content Include="style\img\exp\exp_photoshop.svg" />
+    <Content Include="style\img\exp\exp_sass.svg" />
+    <Content Include="style\img\exp\exp_wordpress.svg" />
+    <Content Include="style\img\feature\feature_browsers.svg" />
+    <Content Include="style\img\feature\feature_clients.svg" />
+    <Content Include="style\img\feature\feature_fast.svg" />
+    <Content Include="style\img\feature\feature_intuitive.svg" />
+    <Content Include="style\img\feature\feature_mobile.svg" />
+    <Content Include="style\img\feature\feature_newest.svg" />
+    <Content Include="style\img\feature\feature_secure.svg" />
+    <Content Include="style\img\feature\feature_semantic.svg" />
+    <Content Include="style\img\feature\feature_seo.svg" />
+    <Content Include="style\img\feature\feature_sourcefiles.svg" />
+    <Content Include="style\img\footer_image.png" />
+    <Content Include="style\img\hero_background.jpg" />
+    <Content Include="style\img\hero_gradient.png" />
+    <Content Include="style\img\hero_hat.png" />
+    <Content Include="style\img\hero_pattern.png" />
+    <Content Include="style\img\hero_photo.jpg" />
+    <Content Include="style\img\section_pattern01.png" />
+    <Content Include="style\img\section_pattern02.png" />
+    <Content Include="style\img\section_pattern03.png" />
+    <Content Include="style\img\section_pattern04.png" />
+    <Content Include="style\img\title_circle.svg" />
+    <Content Include="style\img\title_pentagon.svg" />
+    <Content Include="style\img\title_square.svg" />
+    <Content Include="style\img\title_triangle.svg" />
+    <Content Include="style\js\dependencies.min.js" />
+    <Content Include="style\js\dependencies\jquery-1.11.1.min.js" />
+    <Content Include="style\js\dependencies\responsiveslides.min.js" />
+    <Content Include="style\js\dependencies\velocity.min.js" />
+    <Content Include="style\js\global.js" />
+    <Content Include="style\js\html5shiv.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <Content Include="php\contact_form.php" />
+    <Content Include="style\css\global.css.map" />
+    <Content Include="style\css\global.scss" />
+    <Content Include="style\css\_block_ghost-button.scss" />
+    <Content Include="style\css\_normalize-3.0.1.scss" />
+    <Content Include="style\css\_part_contact.scss" />
+    <Content Include="style\css\_part_experience.scss" />
+    <Content Include="style\css\_part_features.scss" />
+    <Content Include="style\css\_part_footer.scss" />
+    <Content Include="style\css\_part_header.scss" />
+    <Content Include="style\css\_part_hero.scss" />
+    <Content Include="style\css\_part_realizations.scss" />
+    <Content Include="style\css\_part_section-header.scss" />
+    <Content Include="style\css\_responsive.scss" />
+    <Content Include="style\fonts\webfont-font-awesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="style\fonts\webfont-font-awesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="style\fonts\webfont-font-awesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="style\fonts\webfont-font-awesome\fonts\FontAwesome.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Bold.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Bold.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Bold.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Bold.woff" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraBold.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraBold.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraBold.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraBold.woff" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraLight.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraLight.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraLight.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-ExtraLight.woff" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Heavy.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Heavy.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Heavy.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Heavy.woff" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Light.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Light.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Light.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Light.woff" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Medium.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Medium.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Medium.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Medium.woff" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Regular.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Regular.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Regular.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Regular.woff" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-SemiBold.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-SemiBold.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-SemiBold.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-SemiBold.woff" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Thin.eot" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Thin.otf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Thin.ttf" />
+    <Content Include="style\fonts\webfont-raleway\Raleway-Thin.woff" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>55506</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44337/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
